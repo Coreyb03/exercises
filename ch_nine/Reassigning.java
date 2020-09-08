@@ -1,15 +1,21 @@
+import java.util.Scanner;
+
 public class Reassigning {
     public static void main(String[] args) {
-        double x = 0.0;
-        double answer = 3*(x*x) - 8*(x) + 4;
+        Double x = 0.0;
+        Double answer = 3*(x*x) - 8*(x) + 4;
+        final Scanner scanner = new Scanner(System.in);
 
-        x = 0.5;
+        System.out.println("what is the value of x");
+        x = scanner.nextDouble();
         answer = 3*(x*x) - 8*(x) + 4;
         System.out.println("Value of 3x^2-8x + 4 when x = " + x + " is " + answer);
-        x = 2.0;
+        System.out.println("what is the value of x");
+        x = scanner.nextDouble();
         answer = 3*(x*x) - 8*(x) + 4;
         System.out.println("Value of 3x^2-8x + 4 when x = " + x + " is " + answer);
-        x = 4.0;
+        System.out.println("what is the value of x");
+        x = scanner.nextDouble();
         answer = 3*(x*x) - 8*(x) + 4;
         System.out.println("Value of 3x^2-8x + 4 when x = " + x + " is " + answer);
 
