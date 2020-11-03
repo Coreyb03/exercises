@@ -15,6 +15,14 @@ public class ImmutableBox {
         this.length = oldBox.length;
     }
 
+    public ImmutableBox BiggerBox(ImmutableBox oldBox){
+        return new ImmutableBox(1.25 * oldBox.width(),1.25 * oldBox.height(),1.25 * oldBox.length());
+    }
+
+    public ImmutableBox SmallerBox(ImmutableBox oldBox){
+        return new ImmutableBox(.75 * oldBox.width(),.75 * oldBox.height(),.75 * oldBox.length());
+    }
+
     public double volume(){
         return width * height * length;
     }

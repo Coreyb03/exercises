@@ -15,5 +15,11 @@ public class BoxTester
 
     System.out.println( "length: " + box2.length() + " height: " + box2.height() +  " width:  " + box2.width() )  ;
 
+    ImmutableBox box3 = box.BiggerBox(box);
+    System.out.println( "length: " + box3.length() + " height: " + box3.height() +  " width:  " + box3.width() )  ;
+    
+    ImmutableBox box4 = box.SmallerBox(box);
+    System.out.println( "length: " + box4.length() + " height: " + box4.height() +  " width:  " + box4.width() )  ;
+
   }
 }
