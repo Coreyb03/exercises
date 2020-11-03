@@ -47,8 +47,17 @@ public class ImmutableBox {
     public double faceArea(){
         return height * length;
     }
+    public boolean nests(ImmutableBox outsideBox){
+        boolean lengthFit = (length < outsideBox.length)? true : false ;
+        boolean widthFit = (width < outsideBox.width)? true : false ;
+        boolean heightFit = (height < outsideBox.height)? true : false ;
+        if (lengthFit && widthFit && heightFit ){
+            return true;
+        } else {
+            return false;
+        }
 
-
+    }
 
 
 }

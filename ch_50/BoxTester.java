@@ -21,5 +21,8 @@ public class BoxTester
     ImmutableBox box4 = box.SmallerBox(box);
     System.out.println( "length: " + box4.length() + " height: " + box4.height() +  " width:  " + box4.width() )  ;
 
+    System.out.println("Does box fit in box4? " + box.nests(box4));
+    System.out.println("Does box fit in box3? " + box.nests(box3));
+
   }
 }
