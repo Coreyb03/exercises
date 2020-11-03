@@ -9,5 +9,11 @@ public class BoxTester
 
     System.out.println( "length: " + box.length() + " height: " + box.height() +  " width:  " + box.width() )  ;
 
+    System.out.println( "topArea: "  + box.topArea() + " sideArea: " + box.sideArea() + " faceArea: " + box.faceArea() );
+
+    ImmutableBox box2 = new ImmutableBox(box);
+
+    System.out.println( "length: " + box2.length() + " height: " + box2.height() +  " width:  " + box2.width() )  ;
+
   }
 }

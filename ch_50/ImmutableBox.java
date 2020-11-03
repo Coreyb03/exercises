@@ -9,6 +9,12 @@ public class ImmutableBox {
         this.length = length;
     }
 
+    public ImmutableBox(ImmutableBox oldBox){
+        this.width = oldBox.width;
+        this.height = oldBox.height;
+        this.length = oldBox.length;
+    }
+
     public double volume(){
         return width * height * length;
     }
@@ -24,6 +30,16 @@ public class ImmutableBox {
     public double width(){
         return width;
     }
+    public double topArea(){
+        return width * length;
+    }
+    public double sideArea(){
+        return width * height;
+    }
+    public double faceArea(){
+        return height * length;
+    }
+
 
 
 
